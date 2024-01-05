@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Zaky Firdaus" >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Zaky Personal Website</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+        <section>
+          <h1 class="judul">Muhammad <span>Zaky</span> Firdaus</h1>
+          <div class="contactInfo">
+            <img src="./image/msg.png" alt="Message: " width="20px" height="20px">
+            <p>muhammad.zaky.firdaus@mail.ugm.ac.id</p>
+          </div>
+
+          <div class="contactInfo">
+            <img src="./image/phone-call.png" alt="Call: " width="20px" height="20px">
+            <p>0821 3604 3010</p>
+          </div>
+         
+        </section>
+        <ul class="link" >
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Recommendations</a></li>
+        </ul>
+
+        <div class="image"></div>
+    </div>
+
+    <div class="aboutMe">
+      <img src="./image/study.png" alt="" width="320px" height="240px">
+      
+      <article>
+        <h2 class="header2">Hi, I'm Muhammad Zaky!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit omnis ea sed, voluptatem unde illum rem praesentium exercitationem. Excepturi, quidem quos natus incidunt eius tempore vitae labore nesciunt corporis.</p>
+      </article>
+      
+    </div>
+
+    <hr>
+    
+    <section class="skills">
+      <h2 class="header2">Skills</h2>
+
+      <div class="skillSet">
+        <div class="skillsCard">
+          <img src="./image/js.png" alt="" width="30%" height="30%">
+          <h3>JavaScript</h3> 
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skillsCard">
+          <img src="./image/html-5.png" alt="" width="30%" height="30%">
+          <h3>HTML</h3> 
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skillsCard">
+          <img src="./image/react.png" alt="" width="30%">
+          <h3>React JS</h3> 
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skillsCard">
+          <img src="./image/226777.png" alt="" width="30%">
+          <h3>Java</h3> 
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skillsCard">
+          <img src="./image/5968322.png" alt="" width="30%">
+          <h3>Node JS</h3> 
+          <p>2 years experience</p>
+        </div>
+
+      </div>
+    
+      </section>
+
+    <hr>
+
+    <section class="projects">
+      <h2 class="header2">Projects</h2>
+
+      <div class="projectCard">
+        <h3>Green Escapes</h3>
+        <ul>
+          <li>Developed an web app using HTML,CSS,Javascript and Navic system for the development of rural areas via tourism annd hospitality.</li>
+        </ul>
+      </div>
+
+      <hr class="hrProject">
+
+      <div class="projectCard">
+        <h3>Simple Interest Calculator</h3>
+        <ul>
+          <li>Developed a simple interest calculator which takes input for Rate of interest,years,amount of money and gives dynmic output in sentence.</li>
+        </ul>
+      </div>
+
+      <hr class="hrProject">
+
+      <div class="projectCard">
+        <h3>Units Converter</h3>
+        <ul>
+          <li>Created a multi page unit converter which converts tempertaure,distance,weight,simplemath,height and time.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <section id="Recommendations">
+
+      <h2 class="header2">Recommendations</h2>
+
+      <div class="all_recommendations" id="all_recommendations">
+          <div class="recommendation">
+              <span>&#8220;</span>
+              Zaky is very smart and grasps onto things which are related to web development so quickly that it saves a lot of time which helps us in make him learn new concepts which were useful for our company other than the basic concepts taught to trainees.
+              <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+              <span>&#8220;</span>
+              Zaky not only has quick learning quirks but also has great leadership skill ,he wasnot only mentoring group at the same time learning related subjects which might be helpful too even the senior developers present here .Inshort he has a great personality and helping nature. 
+              <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+              <span>&#8220;</span>
+              When it comes to experience he's the best ,I, once had worked with him he not only helped me in completeing my work also gave me few tips on how to get the work easily and fastly done.
+              <span>&#8221;</span>
+          </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+          <fieldset>
+              <legend class="introduction">Leave a Recommendation</legend>          
+              <input type="text" placeholder="Name (Optional)"> <br/>
+              <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+              <div class="flex_center">
+                  <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+              </div>
+          </fieldset>
+      </div>
+      </section>
+      
+     
+      
+      <div class="popup" id="popup" class="flex_center">
+          <img src="./image/pngfind.com-check-mark-icon-png-62037.png" alt="" width="10%">
+          <h3>Thanks for leaving a recommendation !</h3>
+          <button id='closeButton' onclick="closePopup()" >Ok</button>
+      </div>
+
+
+      <footer>
+
+      </footer>
+ 
+
+    
+  </div>
+ 
+</body>
+</html>
